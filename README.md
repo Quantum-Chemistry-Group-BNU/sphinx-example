@@ -7,19 +7,14 @@
 一般先安装 Sphinx、主题和 Markdown 支持，例如：
 
 ```bash
+conda create --name sphinx python=3.12
+conda activate sphinx
 pip install sphinx furo myst-parser
 ```
 
 - `sphinx`：文档工具本体
 - `furo`：一个常用主题，其他主题也可以例如 `sphinx-rtd-theme`
 - `myst-parser`：让 Sphinx 支持 Markdown
-
-若使用这个示例仓库里的环境，可以先进入：
-
-```bash
-conda activate sphinx
-pip install sphinx furo myst-parser
-```
 
 ### 第二步：初始化文档目录
 
