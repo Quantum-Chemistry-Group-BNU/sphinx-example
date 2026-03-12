@@ -1,4 +1,4 @@
-修改这个README，太口水话了。# Sphinx + MyST 最小示例
+# Sphinx + MyST 最小示例
 
 ## 1. Sphinx 的基本使用
 
