@@ -1,4 +1,4 @@
-# Sphinx + MyST 最小示例
+修改这个README，太口水话了。# Sphinx + MyST 最小示例
 
 ## 1. Sphinx 的基本使用
 
@@ -204,4 +204,41 @@ python:
 
 配置好之后，Read the Docs 就会自动生成 HTML[https://bnu-sphinx-example.readthedocs.io/en/latest/](https://bnu-sphinx-example.readthedocs.io/en/latest/) 文档网站。
 
-> 这个项目使用codex辅助完成
+## GitHub Actions 使用
+
+本项目包含两个 workflow：
+
+* `.github/workflows/blank.yml`：文档构建检查
+* `.github/workflows/pages.yml`：部署到 GitHub Pages
+
+### `blank.yml`
+
+用于 CI 检查，触发条件：
+
+* `push`
+* `pull_request`
+
+核心操作：
+
+```bash
+pip install sphinx myst-parser furo
+cd docs
+make html
+```
+
+### `pages.yml`
+
+用于将构建结果发布到 GitHub Pages，触发条件：
+
+* push 到 `main`
+* `workflow_dispatch`
+
+最后可以在[https://quantum-chemistry-group-bnu.github.io/sphinx-example](https://quantum-chemistry-group-bnu.github.io/sphinx-example/)发现HTML
+
+## Notes
+
+* Read the Docs 更适合公开仓库
+* 私有仓库可通过 GitHub Actions + GitHub Pages 完成部署
+* 若组织仓库限制外部 actions，需要在 organization settings 中显式放行相关 actions
+
+> 本项目在整理过程中使用了 Codex和ChatGPT5.4辅助。
