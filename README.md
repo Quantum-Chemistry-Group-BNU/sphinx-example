@@ -1,6 +1,6 @@
 # Sphinx + MyST 最小示例
 
-## 1. Sphinx 的基本使用可以怎么讲
+## 1. Sphinx 的基本使用
 
 ### 第一步：安装
 
@@ -207,6 +207,6 @@ python:
 - `configuration: docs/source/conf.py` 必须对应当前仓库的实际目录
 - 依赖文件写成 `docs/requirements.txt`，这样 Read the Docs 会自动安装后再构建
 
-配置好之后，Read the Docs 就会自动生成 HTML 文档网站。
+配置好之后，Read the Docs 就会自动生成 HTML[https://bnu-sphinx-example.readthedocs.io/en/latest/](https://bnu-sphinx-example.readthedocs.io/en/latest/) 文档网站。
 
-> 这个项目使用codex完成
+> 这个项目使用codex辅助完成
