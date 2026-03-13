@@ -154,7 +154,7 @@ docs/build/html/index.html
 
 如果希望把文档发布到线上，通常使用[Read the Docs](https://readsthedocs.com/) 
 
-可以分层5步
+可以分成5步
 - GitHub 上放源码和文档源文件
 - Read the Docs 自动拉取仓库
 - 自动安装依赖
@@ -213,7 +213,7 @@ python:
 
 ### `blank.yml`
 
-用于 CI 检查，触发条件：
+用于 CI（Continuous Integration） 检查，触发条件：
 
 * `push`
 * `pull_request`
